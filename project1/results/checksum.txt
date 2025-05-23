@@ -1,0 +1,16 @@
+input: 
+dist[][] = [[0, 4, infinity, 5, infinity],
+            [infinity, 0, 1,  infinity, 6],
+            [2, infinity, 0, 3, infinity],
+            [infinity,infinity, 1, 0, 2],
+            [1, infinity, infinity, 4, 0]]
+
+infinity means theres no direct path between the two vertices
+infinity is initialized as 100000 (so its never chosen)
+
+output:
+	[[0, 4, 5, 5, 7], 
+         [3, 0, 1, 4, 6], 
+         [2, 6, 0, 3, 5],
+         [3, 7, 1, 0, 2], 
+         [1, 5, 5, 4, 0]]  
