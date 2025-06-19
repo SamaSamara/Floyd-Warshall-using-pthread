@@ -18,10 +18,11 @@ g++ -fopenmp -o floyd openmp.cpp
 ### Performance Comparison
 #### Hardware used
 - **CPU**: AMD Ryzen 5 5625u, 6 cores, 12 Threads.
-- **RAM**: 16 GB
+- **RAM**: 16 GB.
 - **OS**: Windows 11 WSL/Ubuntu 24.04.
 #### Input sizes tested 
-Tested for 100, 300, 500, 600, 2000
+Tested for input sizes= 100, 300, 500, 600, 2000.
+Threads= 1, 2, 4, 6, 8.
 
 ### Speedup Achieved
 for n= 100
