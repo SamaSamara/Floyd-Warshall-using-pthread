@@ -68,3 +68,14 @@ n = 2000
 | 4                 | 70.740999s       | 71.980694s  | 0.982777× |
 | 6                 | 70.693197s       | 70.963618s  | 0.982777× |
 | 8                 | 71.871498s       | 70.980318s  | 1.012555× |
+
+
+![speedup graph](Speedup.png)
+
+
+### Challenges Faced
+- Thread overhead: the overhead of creating threads outweighed the benefits of paralelllism. which caused the parallel time to increase, causing less speedup comparing to the pthread version.
+
+### Conclusion 
+In this project, openmp was used to parallelize Floyd-Warshall Algorithm. While openmp provided an easier implementation and better abstraction for parallelizing loops, the actual performance gain was minimal. Speedup hovered around 1x, even for higher database and multiple threads.
+Despite the limited speedup, the proejct demonstrated how openmp can be used to parallelize code with minimal effort.
